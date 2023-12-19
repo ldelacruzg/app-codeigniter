@@ -1,0 +1,529 @@
+ERROR - 2023-12-19 04:45:46 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 04:45:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 04:47:24 --> Array to string conversion
+in APPPATH/Views/product_view.php on line 3.
+ 1 APPPATH/Views/product_view.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/myapp/app/Views/product_view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 04:48:42 --> Undefined variable $data
+in APPPATH/Views/product_view.php on line 4.
+ 1 APPPATH/Views/product_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/myapp/app/Views/product_view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 04:48:50 --> Undefined variable $data
+in APPPATH/Views/product_view.php on line 4.
+ 1 APPPATH/Views/product_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/myapp/app/Views/product_view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 04:49:02 --> Array to string conversion
+in APPPATH/Views/product_view.php on line 4.
+ 1 APPPATH/Views/product_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/myapp/app/Views/product_view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 04:49:06 --> Array to string conversion
+in APPPATH/Views/product_view.php on line 4.
+ 1 APPPATH/Views/product_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/myapp/app/Views/product_view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 04:51:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 04:51:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 04:52:50 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(13): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(13): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 04:52:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 04:53:18 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(13): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(13): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 04:53:18 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 04:58:55 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 04:58:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 04:59:01 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 04:59:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 04:59:34 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 04:59:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 04:59:47 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 04:59:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 05:00:01 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 05:00:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 05:00:50 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 05:00:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 05:01:09 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: db_products in /app/myapp/system/Database/SQLite3/Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/Database/SQLite3/Connection.php(146): SQLite3->query()
+#2 /app/myapp/system/Database/BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute()
+#3 /app/myapp/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#5 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#6 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#7 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#8 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#9 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-19 05:01:09 --> SQLite3::query(): Unable to prepare statement: 1, no such table: db_products
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 05:02:42 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#7 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/myapp/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/myapp/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /app/myapp/app/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+#6 /app/myapp/system/CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 /app/myapp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 05:02:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProductController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 05:07:57 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 05:08:00 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 05:08:51 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
